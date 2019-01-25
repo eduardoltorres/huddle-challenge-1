@@ -1,0 +1,44 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  background: $light-grayish-blue;
+  overflow-x: hidden;
+}
+
+html, body, ul, ol, li, form, fieldset, legend,
+h1, h2, h3, h4, h5, h6, p {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  // grid-gap: 200px;
+}
