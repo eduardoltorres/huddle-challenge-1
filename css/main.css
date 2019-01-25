@@ -220,10 +220,10 @@ footer {
   .header-btn {
     padding: 15px 55px; }
   .gradient {
-    top: -70%;
-    left: 55%;
+    top: -50%;
+    left: 65%;
     width: 1000px;
-    height: 1100px;
+    height: 1200px;
     -webkit-transform: rotate(-45deg);
     -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
@@ -261,6 +261,8 @@ footer {
       grid-column: 3;
       text-align: left;
       margin: 0 -50px 0 -100px; }
+      .conversations .conversations-container .conversations-text .sub-text {
+        padding: 0; }
     .conversations .try-container {
       grid-column: 1 / -1;
       -ms-grid-row: 2;
