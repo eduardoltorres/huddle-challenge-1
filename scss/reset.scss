@@ -1,17 +1,21 @@
 @import 'variables';
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  background: $light-grayish-blue;
   position: relative;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  background: $light-grayish-blue;
+  overflow-x: hidden;
 }
 
 html, body, ul, ol, li, form, fieldset, legend,
 h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   height: 100%;
 }
 
@@ -24,22 +28,17 @@ fieldset, img {
   border: 0;
 }
 
-img {
-  width: 100%;
-}
-
 li {
   list-style: none;
 }
 
 .wrapper {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0 30px;
-  box-sizing: border-box;
   text-align: center;
   display: grid;
-  grid-template-rows: auto auto auto;
-  grid-gap: 200px;
+  grid-template-rows: repeat(4, auto);
+  // grid-gap: 200px;
 }
