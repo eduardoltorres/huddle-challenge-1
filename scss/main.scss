@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variables';
+@import 'mixins';
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
@@ -50,13 +51,52 @@
       font-size: 16px;
       padding: 0 5px;
     }
-    .header-btn {
-      justify-self: center;
-      background: $pink;
-      color: $light-grayish-blue;
-      font-size: 14px;
-      padding: 12px 30px;
-      box-shadow: 1px 1px 10px $pink;
-    }
+  }
+}
+
+.header-btn {
+  justify-self: center;
+  background: $pink;
+  color: $light-grayish-blue;
+  font-size: 14px;
+  padding: 12px 30px;
+  box-shadow: 1px 1px 10px $pink;
+}
+
+.conversations {
+  display: grid;
+  grid-gap: 125px;
+}
+
+.conversations__wrapper {
+  display: grid;
+  grid-gap: 40px;
+  .conversations__text {
+    display: grid;
+    grid-gap: 15px;
+  }
+}
+
+.title {
+  font-size: 22px;
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+.sub-text {
+  color: $mid-grayish-blue;
+  font-size: 14px;
+  padding: 0 5px;
+  line-height: 25px;
+}
+
+.try-container {
+  display: grid;
+  grid-gap: 20px;
+  background: white;
+  padding: 40px 20px;
+  border-radius: 2px;
+  box-shadow: 1px 1px 30px rgba(154, 82, 255, 0.1);
+  .header-btn {
+    box-shadow: none;
   }
 }
