@@ -4,6 +4,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   background: $light-grayish-blue;
+  position: relative;
 }
 
 html, body, ul, ol, li, form, fieldset, legend,
@@ -22,6 +23,10 @@ fieldset, img {
   border: 0;
 }
 
+img {
+  width: 100%;
+}
+
 li {
   list-style: none;
 }
@@ -32,4 +37,5 @@ li {
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
+  text-align: center;
 }
