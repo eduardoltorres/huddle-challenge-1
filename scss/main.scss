@@ -100,3 +100,59 @@
     box-shadow: none;
   }
 }
+
+footer {
+  background: $very-dark-cyan;
+  color: $light-grayish-blue;
+  .logo-container {
+    justify-self: center;
+    padding-top: 40px;
+    svg * {
+      fill: $light-grayish-blue;
+    }
+  }
+}
+
+.footer-wrapper {
+  padding: 30px 20px 20px;
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  place-items: start;
+  grid-gap: 60px;
+}
+
+.footer-links {
+  display: grid;
+  grid-gap: 20px;
+}
+
+.subscribe-container {
+  display: grid;
+  text-align: center;
+  grid-gap: 15px;
+  p:nth-child(1) {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  p:nth-child(2) {
+    opacity: .8;
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  input {
+    padding: 16px;
+    border: none;
+  }
+  .header-btn {
+    justify-self: stretch;
+    box-shadow: none;
+  }
+}
+
+.social-container {
+  text-align: center;
+  justify-self: stretch;
+  i {
+    padding: 0 10px;
+  }
+}
